@@ -1,0 +1,37 @@
+# Documentación de API
+
+Esta documentación describe las API disponibles en este proyecto.
+
+## Colección de API
+
+Las API se organizan en una colección llamada "swapi". A continuación, se detallan las solicitudes disponibles en esta colección:
+
+### Obtener datos de SWAPI
+
+- **Nombre**: get-swapi-data
+- **URL**: [https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/swapi?id=0](https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/swapi?id=0)
+- **Método**: GET
+- **Descripción**: Esta solicitud obtiene datos de SWAPI.
+- **Parámetros**: 
+  - `id`: Identificador (Valor predeterminado: 0)
+
+### Obtener detalles de una persona de SWAPI
+
+- **Nombre**: get-person
+- **URL**: [https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/get-person?swapi-id='1694194631381_luke_skywalker'](https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/get-person?swapi-id='1694194631381_luke_skywalker')
+- **Método**: GET
+- **Descripción**: Esta solicitud obtiene detalles de una persona de SWAPI.
+- **Parámetros**: 
+  - `swapi-id`: Identificador de persona (Ejemplo: '1694194631381_luke_skywalker') puede ir vacio ('') para traer todos los registros
+
+### Agregar una persona a SWAPI
+
+- **Nombre**: add-person
+- **URL**: [https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/add-person](https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/add-person)
+- **Método**: POST
+- **Descripción**: Esta solicitud agrega una persona a SWAPI. Siempre debe enviarse un valor mayor a 0
+- **Cuerpo (JSON)**: 
+  ```json
+  {
+    "swapi_id": 1
+  }

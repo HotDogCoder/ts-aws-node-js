@@ -1,0 +1,68 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "swapi",
+    "dateExported": "2023-09-08T18:28:19.608Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d5ae3f6c-3860-4791-a924-04b09b380cb7",
+            "colId": "b36262b1-cf5b-4655-b483-ddb7f7d01fe5",
+            "containerId": "",
+            "name": "get-swapi-data",
+            "url": "https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/swapi?id=0",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-08T14:38:06.765Z",
+            "modified": "2023-09-08T15:08:26.178Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "0",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "02fd1c77-a3b2-4539-b8d4-ebd5a1e96294",
+            "colId": "b36262b1-cf5b-4655-b483-ddb7f7d01fe5",
+            "containerId": "",
+            "name": "get-person",
+            "url": "https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/get-person?swapi-id='1694194631381_luke_skywalker'",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-09-08T18:20:20.347Z",
+            "modified": "2023-09-08T18:26:13.553Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "swapi-id",
+                    "value": "'1694194631381_luke_skywalker'",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b500db33-10a0-4cf9-aaf7-9c2a1b337cfa",
+            "colId": "b36262b1-cf5b-4655-b483-ddb7f7d01fe5",
+            "containerId": "",
+            "name": "add-person",
+            "url": "https://z93oruvl8e.execute-api.us-east-1.amazonaws.com/dev/add-person",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-08T16:17:52.129Z",
+            "modified": "2023-09-08T18:27:58.905Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"swapi_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
